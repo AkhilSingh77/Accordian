@@ -1,0 +1,100 @@
+@import "scss-components/boilerplate";
+@import "scss-components/colors";
+@import "scss-components/function";
+@import "scss-components/mixin";
+
+.accordian {
+  max-width: pxtorem(1000px);
+
+  margin: 0 auto;
+  margin-top: pxtorem(40px);
+  &__contentBox {
+    margin: pxtorem(10px) pxtorem(10px);
+    margin-bottom: pxtorem(20px);
+    .headerContainer {
+      margin-bottom: pxtorem(20px);
+      @include flexRow(space-between, center);
+      &__left {
+        @include flexRow(center, center);
+        gap: pxtorem(13px);
+        &--number {
+          color: #007dc5;
+          font-size: pxtorem(50px);
+        }
+        &--country {
+          font-size: pxtorem(35px);
+          font-weight: 400;
+        }
+      }
+    }
+    &__content {
+      overflow: hidden;
+      height: 0;
+      transition: 0.5s;
+
+      border-bottom: 1px solid gray;
+
+      .content-table1 {
+        display: block;
+        border-collapse: collapse;
+
+        @media (min-width: 560px) {
+          display: none;
+        }
+      }
+      .content-table2 {
+        display: none;
+        border-collapse: collapse;
+
+        @media (min-width: 562px) {
+          display: block;
+        }
+      }
+    }
+    .content1 {
+      &__main {
+        border: 1px solid black;
+        width: 150px;
+        height: 100px;
+        padding-left: 15px;
+        padding-top: 15px;
+
+        &__box {
+          @include flexColumn();
+          gap: pxtorem(10px);
+
+          &--country {
+            font-size: pxtorem(25px);
+            color: $heading-color;
+          }
+          &--link {
+            color: black;
+            font-size: pxtorem(18px);
+          }
+        }
+      }
+    }
+  }
+  &__contentBox:hover {
+    cursor: pointer;
+  }
+}
+
+.accordian__contentBox.active .accordian__contentBox__content {
+  height: auto;
+  padding-top: pxtorem(30px);
+  padding-bottom: pxtorem(30px);
+}
+
+.fa-circle-plus {
+  scale: 1.8;
+  color: white;
+  background-color: black;
+  border: 1.3px solid black;
+  border-radius: 50%;
+}
+
+.fa-circle-minus {
+  scale: 1.8;
+  color: black;
+}

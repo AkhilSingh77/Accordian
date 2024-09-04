@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+p, input, span {
+  margin: 0;
+  padding: 0;
+}
+
+input, select {
+  outline: none;
+  border: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+h3, h1, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+.accordian {
+  max-width: 62.5rem;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+}
+.accordian__contentBox {
+  margin: 0.625rem 0.625rem;
+  margin-bottom: 1.25rem;
+}
+.accordian__contentBox .headerContainer {
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordian__contentBox .headerContainer__left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8125rem;
+}
+.accordian__contentBox .headerContainer__left--number {
+  color: #007dc5;
+  font-size: 3.125rem;
+}
+.accordian__contentBox .headerContainer__left--country {
+  font-size: 2.1875rem;
+  font-weight: 400;
+}
+.accordian__contentBox__content {
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+  border-bottom: 1px solid gray;
+}
+.accordian__contentBox__content .content-table1 {
+  display: block;
+  border-collapse: collapse;
+}
+@media (min-width: 560px) {
+  .accordian__contentBox__content .content-table1 {
+    display: none;
+  }
+}
+.accordian__contentBox__content .content-table2 {
+  display: none;
+  border-collapse: collapse;
+}
+@media (min-width: 562px) {
+  .accordian__contentBox__content .content-table2 {
+    display: block;
+  }
+}
+.accordian__contentBox .content1__main {
+  border: 1px solid black;
+  width: 150px;
+  height: 100px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+.accordian__contentBox .content1__main__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 0.625rem;
+}
+.accordian__contentBox .content1__main__box--country {
+  font-size: 1.5625rem;
+  color: #007dc5;
+}
+.accordian__contentBox .content1__main__box--link {
+  color: black;
+  font-size: 1.125rem;
+}
+.accordian__contentBox:hover {
+  cursor: pointer;
+}
+
+.accordian__contentBox.active .accordian__contentBox__content {
+  height: auto;
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+}
+
+.fa-circle-plus {
+  scale: 1.8;
+  color: white;
+  background-color: black;
+  border: 1.3px solid black;
+  border-radius: 50%;
+}
+
+.fa-circle-minus {
+  scale: 1.8;
+  color: black;
+}/*# sourceMappingURL=styles.css.map */
