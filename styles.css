@@ -126,6 +126,9 @@ button {
   width: -moz-fit-content;
   width: fit-content;
 }
+.accordian__contentBox .content1__main__box--link:hover {
+  border-bottom: 1px solid blue;
+}
 .accordian__contentBox:hover {
   cursor: pointer;
 }
