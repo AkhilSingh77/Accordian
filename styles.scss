@@ -54,14 +54,15 @@
     .content1 {
       &__main {
         border: 1px solid black;
-        width: pxtorem(150px);
-        height: pxtorem(100px);
+        width: pxtorem(160px);
+        height: pxtorem(120px);
         padding-left: pxtorem(15px);
         padding-top: pxtorem(15px);
 
         &__box {
           @include flexColumn();
           gap: pxtorem(10px);
+          padding-bottom: pxtorem(15px);
 
           &--country {
             font-size: pxtorem(25px);
@@ -70,6 +71,10 @@
           &--link {
             color: black;
             font-size: pxtorem(18px);
+            text-decoration: none;
+            border-bottom: 1px solid black;
+            padding-bottom: 0.5px;
+            width: fit-content;
           }
         }
       }

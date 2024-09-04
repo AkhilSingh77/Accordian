@@ -100,8 +100,8 @@ button {
 }
 .accordian__contentBox .content1__main {
   border: 1px solid black;
-  width: 9.375rem;
-  height: 6.25rem;
+  width: 10rem;
+  height: 7.5rem;
   padding-left: 0.9375rem;
   padding-top: 0.9375rem;
 }
@@ -111,6 +111,7 @@ button {
   justify-content: flex-start;
   align-items: stretch;
   gap: 0.625rem;
+  padding-bottom: 0.9375rem;
 }
 .accordian__contentBox .content1__main__box--country {
   font-size: 1.5625rem;
@@ -119,6 +120,11 @@ button {
 .accordian__contentBox .content1__main__box--link {
   color: black;
   font-size: 1.125rem;
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .accordian__contentBox:hover {
   cursor: pointer;
