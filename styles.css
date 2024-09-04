@@ -100,10 +100,10 @@ button {
 }
 .accordian__contentBox .content1__main {
   border: 1px solid black;
-  width: 150px;
-  height: 100px;
-  padding-left: 15px;
-  padding-top: 15px;
+  width: 9.375rem;
+  height: 6.25rem;
+  padding-left: 0.9375rem;
+  padding-top: 0.9375rem;
 }
 .accordian__contentBox .content1__main__box {
   display: flex;
@@ -141,4 +141,8 @@ button {
 .fa-circle-minus {
   scale: 1.8;
   color: black;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }/*# sourceMappingURL=styles.css.map */

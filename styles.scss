@@ -18,7 +18,7 @@
         @include flexRow(center, center);
         gap: pxtorem(13px);
         &--number {
-          color: #007dc5;
+          color: $heading-color;
           font-size: pxtorem(50px);
         }
         &--country {
@@ -54,10 +54,10 @@
     .content1 {
       &__main {
         border: 1px solid black;
-        width: 150px;
-        height: 100px;
-        padding-left: 15px;
-        padding-top: 15px;
+        width: pxtorem(150px);
+        height: pxtorem(100px);
+        padding-left: pxtorem(15px);
+        padding-top: pxtorem(15px);
 
         &__box {
           @include flexColumn();
@@ -97,4 +97,8 @@
 .fa-circle-minus {
   scale: 1.8;
   color: black;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
